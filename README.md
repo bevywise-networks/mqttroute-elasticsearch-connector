@@ -1,5 +1,10 @@
 # mqttroute-elasticsearch-connector
-The Connector to store the received events and commands published from the MQTTRoute - mqtt broker to the ElasticSearch backend. 
+
+This plugin connects MQTTRoute with the ElasticSearch to store received payload info into ElasticSearch for further analysis and Visualization. 
+
+# MQTTRoute 
+
+MQTTRoute is a powerful and high performance MQTTBroker that enables communication between various MQTT Devices and MQTT Sensors. MQTTRoute has FREE and affordable premium versions. 
 
 # configure and setup mqttroute-elasticsearch-connector
 	1. open plugin.conf and configure the hostname and port no.
