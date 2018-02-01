@@ -11,20 +11,24 @@
 # The parameter data will be in dict format and the keys are 'sender','topic', 'message', 'unixtime', 'timestamp'
 #
 ################################################################
-import time
+import os, sys, time
+sys.path.append(os.getcwd()+'/lib')
+# replace the Elastic installed path with next line  
+sys.path.append('/usr/local/lib/python2.7/dist-packages')
 from Elastic import Elastic
-filepath = "./plugin.conf"
-Elas_inst = Elastic(filepath)
+global Elas_inst
+confpath = "./lib/plugin.conf"
+Elas_inst = Elastic(confpath)
 	
 def handle_Received_Payload(data):
-
+	#
 	# Write your code here. Use your connection object to 
+	#
+	#
+	# finish your code here.
+	#
 	# Send data to your data store
 	result = Elas_inst.data_consumer(data)
 	# if result is none then write failed
 	 
-# Write code for testing. 
-if __name__ == '__main__':
-	param1 = {'topic': 'mytopic', 'unixtime': 1514960289, 'message': 'hello I am publisher1', 'sender': 'publisherclient1', 'timestamp': '2018-01-03 11:48:09'}
-	handle_Received_Payload(param1)
-	
+	 

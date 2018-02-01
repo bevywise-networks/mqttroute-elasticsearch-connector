@@ -28,6 +28,7 @@ class Elastic(Config):
     # Initialiser Class
     def __init__(self, filepath):
         super(Elastic, self).__init__(filepath)
+        
         if self._open() == True:
             self.log = logger.Logger(self.get_value('LOG','LOG_FILE_PATH'))
             self.log.info("Config File Loaded Sucessfully.")
@@ -53,7 +54,6 @@ class Elastic(Config):
             self.log.err('{}:{}:{}'.format(exc_type, fname, exc_tb.tb_lineno))
         else:
             self.log.info("Sucessfully Connected To Elastic at port - {0} ".format(self.custom_data['elastic_port']))    
-
             
     def data_consumer(self,data,result = ''):
         try:
