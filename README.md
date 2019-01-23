@@ -16,5 +16,5 @@ Bevywise MQTT Broker is a powerful and high performance MQTTBroker that enables 
 	4. Replace custom_store.py with Bevywise/MQTTRoute/extension/custom_store.py.
 	5. Open Bevywise/MQTTRoute/conf/data_store.conf 
 		1. Update CUSTOMSTORAGE = ENABLED
-		2. Update DATASTORE = CUSTOM 
+		2. Update DATASTORE = ELASTIC 
 	6. Start the MQTTRoute and it will start storing all the payload into ElasticSearch Server.
