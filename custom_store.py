@@ -17,7 +17,7 @@ sys.path.append(os.getcwd()+'/lib')
 sys.path.append('/usr/local/lib/python2.7/dist-packages')
 from Elastic import Elastic
 global Elas_inst
-confpath = "./lib/plugin.conf"
+confpath = "./extension/plugin.conf"
 Elas_inst = Elastic(confpath)
 	
 def handle_Received_Payload(data):
