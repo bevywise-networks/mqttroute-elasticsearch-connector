@@ -8,7 +8,9 @@ Bevywise MQTT Broker is a powerful and high performance MQTTBroker that enables 
 
 # configure and setup mqttroute-elasticsearch-connector
 
-	1. Open plugin.conf and configure the hostname and port no of the ElasticSearch.
+	1. Open plugin.conf and configure 
+		1.update hostname and port no of the Elastic search.
+		2.update log file path to your own folder location. [default = Bevywise/MQTTRoute/extension]
 	2. Copy the plugin.conf and paste it in to Bevywise/MQTTRoute/extension.
 	3. Copy the folder Elastic and paste it in to Bevywise/MQTTRoute/extension.
 	4. Replace custom_store.py with Bevywise/MQTTRoute/extension/custom_store.py.
