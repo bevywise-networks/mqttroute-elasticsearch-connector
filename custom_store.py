@@ -12,12 +12,12 @@
 #
 ################################################################
 import os, sys, time
-sys.path.append(os.getcwd()+'/lib')
+sys.path.append(os.getcwd()+'../extensions')
 # replace the Elastic installed path with next line  
 sys.path.append('/usr/local/lib/python2.7/dist-packages')
 from Elastic import Elastic
 global Elas_inst
-confpath = "../extension/plugin.conf"
+confpath = "../extensions/plugin.conf"
 Elas_inst = Elastic(confpath)
 	
 def handle_Received_Payload(data):
